@@ -1,5 +1,5 @@
 #!js
-var renderHtml = require('./htmlbuilder');
+var renderHtml = require('../htmlbuilder/htmlbuilder');
 var headers = { "Content-Type": "text/html" };
 module.exports = [200, headers, renderHtml(
   ["html",
