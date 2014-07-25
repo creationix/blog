@@ -1,5 +1,5 @@
-[submodule "htmlbuilder.git"]
+[submodule "htmlbuilder"]
 	entry = F2957EE7BF82DED77B0569872E30EFC1:7216c74cbb62338fabccb339f38b6b6e4e9991e1-htmlbuilder.git
 	url = git://github.com/creationix/htmlbuilder.git
 	ref = refs/heads/master
-	path = htmlbuilder.git
+	path = htmlbuilder
