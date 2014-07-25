@@ -8,7 +8,9 @@ module.exports = [200, headers, renderHtml(
     ],
     ["body",
       ["h1", "Test Page"],
-      ["p", "Welcome to the test page"]
+      ["p", "Welcome to the test page"],
+      ["p", "__dirname: ", __dirname],
+      ["p", "__filename: ", __filename],
     ]
   ]
 )];
