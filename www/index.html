@@ -1,17 +1,13 @@
 #!js
 var renderHtml = require('../htmlbuilder/htmlbuilder');
+var Layout = require('../template/layout');
+
 var headers = { "Content-Type": "text/html" };
 module.exports = [200, headers, renderHtml(
-  ["html",
-    ["head",
-      ["title", "Test Page"]
-    ],
-    ["body",
-      ["h1", "Test Page"],
-      ["p", "Welcome to the test page"],
-      ["img", {src:"hello-world.png"}],
-      ["p", "__dirname: ", __dirname],
-      ["p", "__filename: ", __filename],
-    ]
+  [Layout, "Test Page",
+    ["p", "Welcome to the test page"],
+    ["img", {src:"hello-world.png"}],
+    ["p", "__dirname: ", __dirname],
+    ["p", "__filename: ", __filename],
   ]
 )];
