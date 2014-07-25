@@ -1,3 +1,5 @@
-[submodule "filters"]
-	path = filters
-	url = git@github.com:creationix/my-filters.git
+[submodule "htmlbuilder"]
+	url = git@github.com:creationix/htmlbuilder.git
+	ref = refs/heads/master
+	prefix = hy23z4cv-411hr8
+	path = htmlbuilder

@@ -1,4 +1,4 @@
 blog.creationix.com
 ===================
 
-The database for blog.creationix.com
+A git powered blog about code adventures.
