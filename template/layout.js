@@ -2,16 +2,18 @@ var slice = [].slice;
 
 module.exports = function (title) {
   var body = slice.call(arguments, 1);
-  return ["html", { lang: "en" },
+  return ["html", {lang: "en"},
     ["head",
       ["title", title],
-      ["meta", { charset: "utf-8" }],
-      ["link", { rel: "shortcut icon", href: "" }],
-      ["meta", { name: "description", content: "" }],
-      // <!--[if lt IE 9]>
-      //   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      // <![endif]-->
-      // <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+      ["meta", {charset: "utf-8"}],
+      ["link", {rel: "shortcut icon", href: ""}],
+      ["meta", {name: "description", content: ""}],
+      ["cond-comment", "lt IE 9",
+        ["script", {src:"//html5shim.googlecode.com/svn/trunk/html5.js"}],
+      ],
+      ["cond-comment", "lte IE 7",
+        ["script", {src:"js/lte-ie7.js"}],
+      ],
       // Mobile Specific Metas
       ["meta", {
         name: "viewport",
