@@ -1,10 +1,10 @@
-[submodule "htmlbuilder"]
-	url = git@github.com:creationix/htmlbuilder.git
-	ref = refs/heads/master
-	prefix = hy25f1js-1m7pmfq
-	path = htmlbuilder
 [submodule "creationix.com"]
 	url = git@github.com:creationix/creationix.com.git
 	ref = refs/heads/master
 	prefix = hy25zaho-102nfg2
 	path = creationix.com
+[submodule "htmlbuilder"]
+	url = git@github.com:creationix/htmlbuilder.git
+	ref = refs/heads/master
+	prefix = hy26lklo-16visn9
+	path = htmlbuilder
