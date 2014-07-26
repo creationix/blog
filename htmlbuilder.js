@@ -68,6 +68,9 @@ function render(value) {
       html += " " + key;
     }
     else {
+      if (typeof attribute === "object" && key === "style") {
+        attribute = Object.keys(attribute).map(mapStyle, attribute).join("");
+      }
       html += " " + key + '="' + escapeHtml(attribute, true) + '"';
     }
   }
@@ -147,4 +150,8 @@ function escapeHtml(string, quotes) {
   return String(string).replace(quotes ? /[&<>"]/g : /[&<>]/g, function (char) {
     return escapeMap[char];
   });
+}
+
+function mapStyle(key) {
+  return key + ":" + this[key] + ";";
 }
