@@ -6,5 +6,5 @@
 [submodule "htmlbuilder"]
 	url = git@github.com:creationix/htmlbuilder.git
 	ref = refs/heads/master
-	prefix = hy26lklo-16visn9
+	prefix = hy26n89y-1fhkzs6
 	path = htmlbuilder
