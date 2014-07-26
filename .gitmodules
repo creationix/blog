@@ -3,8 +3,3 @@
 	ref = refs/heads/master
 	prefix = hy25zaho-102nfg2
 	path = creationix.com
-[submodule "htmlbuilder"]
-	url = git@github.com:creationix/htmlbuilder.git
-	ref = refs/heads/master
-	prefix = hy297f1o-1de8joz
-	path = htmlbuilder
